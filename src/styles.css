@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #0C404E;
+}
+
+.bg-content {
+  background-color: #fafafa;
+  padding: 30px;
+}
+
+
+.btn-success {
+  background-color: #00DA9D;
+  border: transparent;
+}
+
+.btn-success:hover {
+  background-color: #FF5A3C; 
+}
+
+.btn-primary {
+  background-color: #0d404e;
+  border: transparent;
+}
+
+.btn-primary:hover {
+  background-color: #FF5A3C;
+  border: transparent;
+}
