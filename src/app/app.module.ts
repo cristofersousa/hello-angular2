@@ -9,6 +9,8 @@ import { JobComponent } from './job.component';   // inserindo meu módulo
 import { JobDetailComponent } from './job-detail.component';   // inserindo o meu detalhes de vagas
 import { JobService } from './job.service';
 import { CollapseModule } from 'ng2-bootstrap';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
+
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { CollapseModule } from 'ng2-bootstrap';
     ],
   imports: [
     CollapseModule,
+    Angular2FontawesomeModule,
     BrowserModule,
     FormsModule,
     HttpModule,

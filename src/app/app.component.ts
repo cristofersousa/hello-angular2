@@ -3,7 +3,6 @@ import {Job } from './job';  // inserindo nossa classe
 import {Http, Headers} from '@angular/http';  // protocolos http
 import 'rxjs/add/operator/toPromise'; // usando os Observable do RXJS é melhor que do Angular2
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

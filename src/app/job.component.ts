@@ -11,7 +11,7 @@ import {Job } from './job';  // inserindo nossa classe
 //minha classe
 export class JobComponent {
   @Input() job: Job;
-
+  
   public isCollapsed:boolean = false;
 
   public collapsed(event:any):void {

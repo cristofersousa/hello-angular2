@@ -3,34 +3,38 @@
 
     <h1> {{title}} </h1>
 
-  <button class="btn btn-primary" type="button" (click)="isCollapsed = !isCollapsed">Adicionar vaga!
+  <!-- <button class="btn btn-primary"
+          type="button"
+          (click)="isCollapsed = !isCollapsed">Adicionar vaga!
   </button>
-  <hr>
+  <hr> -->
 
-    <div (collapsed)="collapsed($event)"
-     (expanded)="expanded($event)"
-     [collapse]="isCollapsed">
+
+<!--
+  <div (collapsed)="collapsed($event)"
+       (expanded)="expanded($event)"
+       [collapse]="isCollapsed"> -->
 
   <div class="row">
       <div class="col-md-12">
         <div class="form-group">
-            <label for="">Título</label>
-            <input type="text" class="form-control" [(ngModel)]="job.titulo" nome="titulo" id="" placeholder="">
-        </div>
-      </div>
-   </div>
-
-   <div class="row">
-    <div class="col-md-12">
-      <div class="form-group">
-        <label for="">Descrição</label>
-        <textarea class="form-control" nome="desrição" [(ngModel)]="job.descricao" rows="3"></textarea>
+          <label for="">Título</label>
+          <input type="text" class="form-control" [(ngModel)]="job.titulo" nome="titulo" id="" placeholder="">
       </div>
     </div>
+ </div>
+
+ <div class="row">
+  <div class="col-md-12">
+    <div class="form-group">
+      <label for="">Descrição</label>
+      <textarea class="form-control" nome="desrição" [(ngModel)]="job.descricao" rows="3"></textarea>
+    </div>
   </div>
+</div>
 
  <button (click)="inserir()" class="btn btn-primary">  Adicionar</button>
-</div> <!--/collapse -->
+<!-- </div> <!--/collapse --> 
 
 <div class="lista">
   <job *ngFor="let j of jobs" [job]= "j"></job>
